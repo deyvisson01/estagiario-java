@@ -14,19 +14,18 @@ public class Triangulo {
      */
 
     public static void receberMedidasTriangulo(){
-
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Entre com os lados do triângulo: ");
         int lado1 = sc.nextInt();
         int lado2 = sc.nextInt();
         int lado3 = sc.nextInt();
-
+        sc.close();
+        
         boolean resp = checarTriangulo(lado1, lado2, lado3);
         
         if (resp) System.out.println("É um triangulo!");
         else System.out.println("Não é um triangulo!");
-
     }
 
     public static boolean checarTriangulo(int a, int b, int c){
@@ -35,7 +34,6 @@ public class Triangulo {
         }else{
             return false;
         }
-
         // throw new UnsupportedOperationException();
     }
 
