@@ -1,5 +1,8 @@
 package br.com.mobitbrasil.ped.q5;
 
+import java.util.*;
+import java.util.stream.LongStream;
+
 public class SomaRecursiva {
 
     /**
@@ -9,8 +12,26 @@ public class SomaRecursiva {
      *
      * @return
      */
+
+    public static void recebeValor(){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Entre com o valor a ser somado: ");
+        int valor = sc.nextInt();
+        sc.close();
+
+        SomaRecursiva.somar(valor);
+    }
+
     public static long somar(int valor){
-        throw new UnsupportedOperationException();
+        long result = LongStream.iterate(1, n-> n+1)
+        .limit(valor)
+        .reduce(0, (a,b) -> a + b);
+
+        System.out.println(result);
+        return result;
+        
+        // throw new UnsupportedOperationException();
     }
 
 }
