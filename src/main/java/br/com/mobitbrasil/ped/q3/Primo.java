@@ -9,8 +9,25 @@ public class Primo {
      *
      * @return
      */
-    public static long proximoPrimo(long numero){
-        throw new UnsupportedOperationException();
+
+    public static boolean primo(long numero){
+        for (int i = 2; i < numero; i++) {
+            if (numero % i == 0) return false;   
+        }
+        return true;
     }
 
+    public static long proximoPrimo(long numero){
+        numero++;
+        long i = numero + 1;
+        while (i > numero) {
+            if(!primo(numero)) {
+                numero++;
+                i++;
+            }else i--;
+        }
+        return numero;
+
+        // throw new UnsupportedOperationException();
+    }
 }
