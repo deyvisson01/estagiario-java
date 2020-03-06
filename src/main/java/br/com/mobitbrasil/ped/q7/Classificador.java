@@ -23,28 +23,23 @@ public class Classificador {
         String palavra = sc.nextLine();
         System.out.println("Palavra: "+palavra+" \t quantidade: " + Classificador.contarPalavras(palavra));
         sc.close();
-
     }
 
-    public static long contarPalavras(String palavra){
-        
-        List<String[]> lista = new ArrayList<>();   
+    public static long contarPalavras(String palavra){ 
 
         Map<String, Integer> mapPalavras;
         mapPalavras = new HashMap<String,Integer>();
-        
 
         try {
             String path = "src/main/resources/palavras.txt";
             File caminhoDoTexto = new File(path);
             FileReader lerCaminhoDoTexto = new FileReader(caminhoDoTexto);
             BufferedReader lerArquivo = new BufferedReader(lerCaminhoDoTexto);
-
             String curtLine = lerArquivo.readLine();
+
             while (curtLine != null) {
                 String minusculo = curtLine.toLowerCase();
-
-                Pattern p = Pattern.compile("(\\d+)|([a-záéíóúçãõôê]+)"); // Utilizei uma expressão regular que classifica palavras como uma sequencia de numeros ou letras.
+                Pattern p = Pattern.compile("(\\d+)|([a-záéíóúçãõôê]+)"); // Expressão regular que classifica palavras como uma sequencia de numeros ou letras.
                 Matcher m = p.matcher(minusculo);
 
                 while (m.find()) {
@@ -56,19 +51,15 @@ public class Classificador {
                 curtLine = lerArquivo.readLine();
             }
            lerArquivo.close();
+
            for (Map.Entry<String, Integer> entry : mapPalavras.entrySet()) {
-               if (entry.getKey().equals(palavra)) {
-                return entry.getValue();
-               }
-         }
+               if (entry.getKey().equals(palavra)) return entry.getValue();
+            }
 
         } catch(IOException e) {
             System.out.println("Arquivo não encontrado!");
-        } finally {
-            //System.out.println(lista);
         }
         return 0;
-
         //throw new UnsupportedOperationException();
     }
 }
