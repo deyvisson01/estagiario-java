@@ -12,6 +12,8 @@ public class Ordenar {
      * @return
      */
     public static List<Pessoa> checarAnagramas(List<Pessoa> pessoas){
+
+        
         throw new UnsupportedOperationException();
     }
 
