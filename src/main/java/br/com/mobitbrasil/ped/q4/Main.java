@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(final String[] args) {
         
-        Anagrama.recebeString();
+        Anagrama.recebeString(); // Chamada do método que irá receber o texto.
 
     }
 }
