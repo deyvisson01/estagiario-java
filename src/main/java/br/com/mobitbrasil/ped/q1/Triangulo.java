@@ -16,20 +16,20 @@ public class Triangulo {
     public static void receberMedidasTriangulo(){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Entre com os lados do triângulo: ");
+        System.out.println("Entre com os lados do triângulo: "); // Recebendo os lados da figura.
         int lado1 = sc.nextInt();
         int lado2 = sc.nextInt();
         int lado3 = sc.nextInt();
         sc.close();
         
-        boolean resp = checarTriangulo(lado1, lado2, lado3);
+        boolean resp = checarTriangulo(lado1, lado2, lado3); // Chamando o método que irá realizar a verificação.
         
-        if (resp) System.out.println("É um triangulo!");
+        if (resp) System.out.println("É um triangulo!"); // Testando o resultado obtido pelo método.
         else System.out.println("Não é um triangulo!");
     }
 
     public static boolean checarTriangulo(int a, int b, int c){
-        if ((a < b + c) && (b < a + c) && (c < a + b)) {
+        if ((a < b + c) && (b < a + c) && (c < a + b)) { // Teste de validade dos lados de um triângulo.
             return true;
         }else{
             return false;
