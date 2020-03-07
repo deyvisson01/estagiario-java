@@ -10,14 +10,14 @@ public class Primo {
      * @return
      */
 
-    public static boolean primo(long numero){
+    public static boolean primo(long numero){ // Método que realzia o teste de validade para um número primo.
         for (int i = 2; i < numero; i++) {
             if (numero % i == 0) return false;   
         }
         return true;
     }
 
-    public static long proximoPrimo(long numero){
+    public static long proximoPrimo(long numero){ // Método que irá buscar o próximo número primo.
         numero++;
         long i = numero + 1;
         while (i > numero) {
