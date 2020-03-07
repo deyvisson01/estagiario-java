@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(final String[] args) {
         
-       SomaRecursiva.recebeValor();
+       SomaRecursiva.recebeValor(); // Chamada do método que irá receber o valor.
 
     }
 }
