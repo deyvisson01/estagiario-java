@@ -13,7 +13,7 @@ public class SomaRecursiva {
      * @return
      */
 
-    public void recebeValor(){
+    public static void recebeValor(){
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Entre com o valor a ser somado: "); // Entrada do valor

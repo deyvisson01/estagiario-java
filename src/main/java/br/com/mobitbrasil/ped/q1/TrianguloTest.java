@@ -1,10 +1,9 @@
 package br.com.mobitbrasil.ped.q1;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import org.junit.jupiter.api.DisplayName;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 import org.junit.jupiter.api.Test;
+
 
 /**
  * TrianguloTestes
@@ -12,8 +11,11 @@ import org.junit.jupiter.api.Test;
 public class TrianguloTest {
     @Test
     void recebeEntradas() {
-    	Triangulo triangulo = new Triangulo();
-    	assertEquals(true, triangulo.checarTriangulo(5, 5, 5), "Resultado deve ser TRUE");
+    	
+    	assertTrue(Triangulo.checarTriangulo(5, 5, 5));
+    	assertTrue(Triangulo.checarTriangulo(2, 1, 2));
+    	assertFalse(Triangulo.checarTriangulo(10, 2, 2));
+    	
     }
     
 }
