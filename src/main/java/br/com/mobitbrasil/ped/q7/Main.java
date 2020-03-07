@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-       Classificador.trataPalavra();
+       Classificador.trataPalavra(); // Chamada do método para tratar a entrada.
 
     }
 }
