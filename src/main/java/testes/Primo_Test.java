@@ -1,12 +1,10 @@
 package testes;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
-
 import br.com.mobitbrasil.ped.q3.Primo;
 
-class PrimoTest {
+class Primo_Test {
 
 	@Test
 	void test() {
@@ -17,7 +15,6 @@ class PrimoTest {
 		
 		assertEquals(result_1, Primo.proximoPrimo(valor_1));
 		assertEquals(result_2, Primo.proximoPrimo(valor_2));
-		
 	}
 
 }

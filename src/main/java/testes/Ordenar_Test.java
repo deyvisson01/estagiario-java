@@ -1,16 +1,13 @@
 package testes;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import org.junit.jupiter.api.Test;
-
 import br.com.mobitbrasil.ped.q8.Ordenar;
 import br.com.mobitbrasil.ped.q8.Pessoa;
 
-class OrdenarTest {
+class Ordenar_Test {
 
 	@Test
 	void test() {
@@ -35,7 +32,6 @@ class OrdenarTest {
 		listaPessoa_saida.add(pessoa_1);
 		
 		assertEquals(listaPessoa_saida, Ordenar.ordenarPessoas(listaPessoa));
-		
 	}
 
 }

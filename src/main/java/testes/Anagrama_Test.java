@@ -1,12 +1,10 @@
 package testes;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
-
 import br.com.mobitbrasil.ped.q4.Anagrama;
 
-class AnagramaTest {
+class Anagrama_Test {
 
 	@Test
 	void test() {
