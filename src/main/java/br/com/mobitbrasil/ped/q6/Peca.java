@@ -4,7 +4,7 @@ public class Peca implements Exibir {
     private String descricao;
     private String marca;
 
-    public String exibe() {
+    public String exibe() { // Descrição de como as informações da classe devem ser exibidas.
         return "Marca: "+this.marca+"\t Descrição: "+this.descricao;
     }
 

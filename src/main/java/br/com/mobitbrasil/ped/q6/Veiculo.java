@@ -1,9 +1,9 @@
 package br.com.mobitbrasil.ped.q6;
 
-
 /**
  * Veiculo
  */
+
 abstract class Veiculo implements Exibir {
     protected Motor motor;
     protected Peca peca;

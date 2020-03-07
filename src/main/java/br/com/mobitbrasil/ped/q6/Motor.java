@@ -4,7 +4,7 @@ class Motor implements Exibir {
     private Integer potencia;
     private Integer cilindrada;
 
-    public String exibe() {
+    public String exibe() { // Descrição de como as informações da classe devem ser exibidas.
         return "Potência: "+this.potencia+"\t Cilindrada: "+this.cilindrada;
     }
 

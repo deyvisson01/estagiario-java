@@ -8,11 +8,11 @@ public class Caminhao extends Veiculo{
     private Integer alturaMax;
     private Integer comprimento;
 
-    public String exibe() {
+    public String exibe() { // Descrição de como as informações da classe devem ser exibidas.
         return "Caminhão! \n Motor: "+this.motor+"\t Peça: "+this.peca+"\t Toneladas: "+this.toneladas+"\t Altura máxima: "+this.alturaMax+"\t Comprimento: "+this.comprimento;
     }
 
-    public Caminhao() {
+    public Caminhao() { // Construtor com valores default.
         setMotor(new Motor(20, 40));
         setPeca(new Peca("marca2", "descricao2"));
         setToneladas(100);
@@ -20,7 +20,7 @@ public class Caminhao extends Veiculo{
         setComprimento(10);
     }
 
-    public Caminhao(Motor motor, Peca peca, Integer toneladas, Integer alturaMax, Integer comprimento) {
+    public Caminhao(Motor motor, Peca peca, Integer toneladas, Integer alturaMax, Integer comprimento) { // Construtor com valores da entrada.
         setMotor(motor);
         setPeca(peca);
         setToneladas(toneladas);
