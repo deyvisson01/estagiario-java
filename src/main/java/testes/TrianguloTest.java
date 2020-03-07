@@ -1,8 +1,10 @@
-package br.com.mobitbrasil.ped.q1;
+package testes;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import org.junit.jupiter.api.Test;
+
+import br.com.mobitbrasil.ped.q1.Triangulo;
 
 
 /**

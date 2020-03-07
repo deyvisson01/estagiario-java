@@ -1,4 +1,4 @@
-package br.com.mobitbrasil.ped.q8;
+package testes;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
+
+import br.com.mobitbrasil.ped.q8.Ordenar;
+import br.com.mobitbrasil.ped.q8.Pessoa;
 
 class OrdenarTest {
 

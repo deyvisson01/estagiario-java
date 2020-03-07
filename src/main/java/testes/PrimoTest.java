@@ -1,8 +1,10 @@
-package br.com.mobitbrasil.ped.q3;
+package testes;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import br.com.mobitbrasil.ped.q3.Primo;
 
 class PrimoTest {
 
